@@ -1,0 +1,62 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Point et Pixel{% endblock %}
+
+{% block stylesheets %}
+        {{parent()}}
+		<link rel="stylesheet" href="{{ asset('css/home.css') }}">
+
+{% endblock %} 
+
+{% block body %}
+{% include "include/carousel.html.twig" %}
+
+<main>
+    <section class="mt-5">
+        <h3 class="text-center my-4"> Explorez notre Galerie par thème</h3>
+            <div class="container">
+                <div class="row text-center d-flex justify-content-center">
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <a href="#"><img src="img/facepicture.jpg" class="img-thumbnail"  alt="allez à representation de paysage" id="paysage"></a>
+                        <p class="subjectpaint" >Portrait</p>
+                    </div>
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 col-xl-2 ">
+                        <a href="#"><img src="img/picturehorse.jpg" class="img-thumbnail" alt="allez à representation d'Animaux"></a>
+                        <p class="subjectpaint">Animaux</p>
+                    </div>
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">  
+                        <a href="#"><img src="img/paysage.jpg" class="img-thumbnail"  alt="allez à representation de paysage" id="pay"></a>
+                        <p class="subjectpaint">Paysage</p>
+                    </div>
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <a href="#"><img src="img/naturemorte.jpg" class="img-thumbnail"  alt="allez à representation de nature morte" id="paysa"></a>
+                        <p class="subjectpaint">Nature morte</p>
+                    </div>
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <a href="#"><img src="img/abstract.jpg" class="img-thumbnail" alt="allez à representation de paysage"></a>
+                        <p class="subjectpaint">Abstrait</p>
+                    </div>
+                    <div class="col-8 col-sm-6 col-md-4 col-lg-3 col-xl-2">  
+                        <a href="#"><img src="img/matte-painting-3571084_1920.jpg" class="img-thumbnail"  alt="allez à representation de paysage" id="pa"></a>
+                        <p class="subjectpaint">Divers</p>
+                    </div>
+                </div>
+            </div> 
+        <div class="text m-4 p-4">
+            <h3> Rejoignez le réseau des grands artistes !</br>
+                Faites-vous un nom dans le monde de l'art traditionel et numérique</h3>
+                <p class="mt-4"> 
+                    <br>Vous avez un réel talent mais vous n'avez pas eu l'opportunité ou les moyens d'être remarqué par les collectioneurs et les galeristes ?
+                    <br>Vous êtes un artiste amateur ou présentant un handicap ? 
+                    <br>Vous voudriez partarger au monde ce qui vous habite, percer dans le monde de l'art, présenter et vendre vos oeuvres ?
+                    <br>Point et Pixel vous donne pignon sur la rue virtuelle du web !
+                    <br>Point et Pixel vous donne la possibilité de percer dans le monde de l'art ! 
+                    
+                    {# <span class="title">Point & Pixel </span>est fait pour toi !<br> #}
+                </p>
+            <div class="mt-5" id="block-centrale" >
+                <button class="secondbuttonitem"><a href="selfguid.html">guide pratique</a></button>
+                <a href="account.html"><button class="secondbuttonitem" id="buttoncrud"> Ajouter une oeuvre</button></a>
+            </div>
+        </div>                     
+{% endblock %}

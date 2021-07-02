@@ -11,12 +11,14 @@ use Symfony\Component\HttpFoundation\Response;
 // use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 
 class PagesController extends AbstractController
+
+
 {
     /**
-     * @Route("/", name="home")
+     * @Route("/artgraphique", name="graphique")
      */
-    public function home(): Response
+    public function showgraf(): Response
     {
-        return $this->render('pages/home.html.twig');
+        return $this->render('pages/graphique.html.twig');
     }
 }
